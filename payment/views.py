@@ -21,16 +21,7 @@ def payment_process(request):
         cancel_url = request.build_absolute_uri(
                         reverse('payment:canceled'))
 
-        stripe.Customer.create(
-              name ="Vikraman M",
-              address ={
-                "line1": "Main Road",
-                "postal_code": "605723",
-                "city": "Madurai",
-                "state": "TN",
-                "country": "IN",
-              },
-            )
+      
 
 
 
@@ -47,7 +38,7 @@ def payment_process(request):
             session_data['line_items'].append({
                 'price_data': {
                     'unit_amount': int(item.price * Decimal('100')),
-                    'currency': 'inr',
+                    'currency': 'usd',
                     'product_data': {
                         'name': item.product.name,
                     },

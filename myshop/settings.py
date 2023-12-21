@@ -139,8 +139,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Stripe settings
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51OPg0RSJ0CCMSQrtBc50CmZkN4SRoWk63hj8a6Z5pmt7BVPNCJT9IwLyib2jBdIzuecCqTGP6mX8CnnaGSJdlsYa00uejgRTB2' # Publishable key
-STRIPE_SECRET_KEY = 'sk_test_51OPg0RSJ0CCMSQrtQsK0BApeXpLQVEbMgZqcKXxEUhOB7jKIo89blep0zgqEVeOCGlP3eWpjsYHUawzepspmH4a700M8usO11R' # Secret key
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OPgYQDpnMJb4d7A7xjDb0KeC6iugcLDx4mgKeUPprmQGtl4RAwvg5XFl7eI9Dw18Y8qqPL7O7e8p1OJrAfSoDes00lsZyhNuW' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51OPgYQDpnMJb4d7AdwG4uEcY8xXPocDFYRKokZgkxSSVASODTrzpD3f0oaYbzrQCvX7M6Ot91wdJtyNEBzlKrkjR00kDJd2y3j' # Secret key
 
 # STRIPE_API_VERSION = '2023-10-16'
 
