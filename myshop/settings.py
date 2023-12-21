@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'cart.context_processors.cart',
+                
             ],
         },
     },
@@ -138,9 +139,15 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Stripe settings
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51OPQVASChDLzaW9AGMqwaSsxSAeGh6HdGGBykR0FExP43kyDayqCypFYydrFxuyLfjy5qx3fpReq7l0F10vDgBzn00n4BOnu5S' # Publishable key
-STRIPE_SECRET_KEY = 'sk_test_51OPQVASChDLzaW9AwzOzDv28B5YD5oCQ0aBXTkuBKlLI1wwdUAI2UnRWYtBlkn2wR1oNHECIsd32g03n0wdUHr1H00jzmObCWq' # Secret key
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OPg0RSJ0CCMSQrtBc50CmZkN4SRoWk63hj8a6Z5pmt7BVPNCJT9IwLyib2jBdIzuecCqTGP6mX8CnnaGSJdlsYa00uejgRTB2' # Publishable key
+STRIPE_SECRET_KEY = 'sk_test_51OPg0RSJ0CCMSQrtQsK0BApeXpLQVEbMgZqcKXxEUhOB7jKIo89blep0zgqEVeOCGlP3eWpjsYHUawzepspmH4a700M8usO11R' # Secret key
+
 # STRIPE_API_VERSION = '2023-10-16'
 
 
+
+
 STRIPE_API_VERSION = '2022-08-01'
+
+
+

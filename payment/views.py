@@ -21,6 +21,19 @@ def payment_process(request):
         cancel_url = request.build_absolute_uri(
                         reverse('payment:canceled'))
 
+        stripe.Customer.create(
+              name ="Vikraman M",
+              address ={
+                "line1": "Main Road",
+                "postal_code": "605723",
+                "city": "Madurai",
+                "state": "TN",
+                "country": "IN",
+              },
+            )
+
+
+
         # Stripe checkout session data
         session_data = {
             'mode': 'payment',

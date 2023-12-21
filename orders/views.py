@@ -27,6 +27,18 @@ def order_create(request):
 
             #set the order in the session
             request.session['order_id'] = order.id
+            
+            #Store the form data in the session as well
+            # request.session['order_form_data'] = {
+            #     'first_name': form.cleaned_data['first_name'],
+            #     'last_name': form.cleaned_data['last_name'],
+            #     'email': form.cleaned_data['email'],
+            #     'address': form.cleaned_data['address'],
+            #     'postal_code': form.cleaned_data['postal_code'],
+            #     'city': form.cleaned_data['city'],
+            # }
+
+
             #redirect for payment
             return redirect(reverse('payment:process'))
         
