@@ -1,4 +1,5 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}
@@ -6,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Your shopping cart</h1>
+  <h1>{% trans "Your shopping cart" %}/h1>
   <table class="cart">
     <thead>
       <tr>
@@ -90,7 +91,7 @@
 </div>
 {% endif %}
 
-  <p>Apply a coupon</p>
+  <p>{% trans "Apply a coupon" %}</p>
   <form action="{% url 'coupons:apply' %}" method="post">
     {{ coupon_apply_form }}
     <input type="submit" value="Apply">
@@ -98,9 +99,9 @@
   </form>
   <p class="text-right">
     <a href="{% url "shop:product_list" %}" class="button
-    light">Continue shopping</a>
+    light">{% trans "Continue shopping" %}</a>
     <a href="{% url "orders:order_create" %}" class="button">
-      Checkout
+      {% trans "Checkout" %}
     </a>
   </p>
 {% endblock %}
